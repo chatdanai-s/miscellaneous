@@ -1,0 +1,4 @@
+SELECT
+ music_source_id AS music_id,
+ substring(url FROM 'v[0-9]+') AS vndb_id
+FROM music_source_external_link;
